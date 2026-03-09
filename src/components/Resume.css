@@ -1,0 +1,92 @@
+.resume-section {
+    position: relative;
+    background-color: var(--bg-color);
+    padding: 6rem 0;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-card {
+    padding: 3.5rem;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(70, 0, 255, 0.05));
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.resume-header {
+    transform: translateZ(40px);
+    margin-bottom: 2.5rem;
+}
+
+.resume-header h3 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.resume-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.resume-highlights {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+    transform: translateZ(30px);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    background: rgba(0, 240, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.highlight-icon {
+    font-size: 1.2rem;
+}
+
+.resume-action {
+    transform: translateZ(60px);
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .resume-card {
+        padding: 2rem;
+    }
+
+    .resume-header h3 {
+        font-size: 1.5rem;
+    }
+}

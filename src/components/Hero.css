@@ -1,0 +1,220 @@
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    /* Offset for missing header */
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.greeting {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.name {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title-prefix {
+    color: var(--text-secondary);
+}
+
+.text-accent {
+    color: var(--primary-color);
+}
+
+.cursor-blink {
+    animation: blink 1s step-end infinite;
+    color: var(--primary-color);
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* 3D Profile Card Stylings */
+.hero-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow-sphere {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    z-index: 0;
+    animation: pulseGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        opacity: 0.15;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0.25;
+    }
+}
+
+.parallax-effect {
+    z-index: 2;
+    transform-style: preserve-3d;
+}
+
+.profile-3d-card {
+    width: 320px;
+    height: 420px;
+    position: relative;
+    border-radius: var(--card-radius);
+    padding: 1rem;
+    transform: translateZ(20px);
+}
+
+.inner-card-content {
+    width: 100%;
+    height: 100%;
+    border-radius: calc(var(--card-radius) - 8px);
+    overflow: hidden;
+    position: relative;
+    transform: translateZ(30px);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.tech-badge {
+    position: absolute;
+    background: rgba(13, 13, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(15, 244, 164, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transform: translateZ(50px);
+    pointer-events: none;
+}
+
+.badge-1 {
+    top: 1%;
+    left: 10px;
+    animation: floatIcon 3s ease-in-out infinite alternate;
+}
+
+
+
+.badge-4 {
+    bottom: -10px;
+    right: 5%;
+    animation: floatIcon 4.5s ease-in-out infinite alternate-reverse;
+}
+
+.tech-badge .emoji {
+    font-size: 1.1rem;
+    margin-left: 4px;
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    vertical-align: middle;
+}
+
+@keyframes floatIcon {
+    0% {
+        transform: translateZ(50px) translateY(0);
+    }
+
+    100% {
+        transform: translateZ(50px) translateY(-10px);
+    }
+}
+
+@media (max-width: 992px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .profile-3d-card {
+        width: 280px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    .intro-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .parallax-effect {
+        margin: 0 auto;
+    }
+}

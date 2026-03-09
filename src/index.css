@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Midnight Dark Theme - Developer Aesthetic */
+  --bg-color: #0d0d14;
+  /* Deep midnight blue/black */
+  --bg-secondary: #0d0d14;
+  --bg-glow: radial-gradient(circle at 50% -20%, rgba(15, 244, 164, 0.15), transparent 40%),
+    radial-gradient(circle at 100% 50%, rgba(139, 92, 246, 0.1), transparent 30%);
+
+  --primary-color: #0ff4a4;
+  /* Bright Teal / Mint */
+  --secondary-color: #8b5cf6;
+  /* Purple accent */
+
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  /* Soft slate grey */
+
+  /* Dark Glassmorphism */
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  /* Subtle border */
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --card-radius: 24px;
+  /* High border radius for cards */
+
+  --font-family: 'Outfit', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  /* For developer tags */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  /* Ensure background is dark during scroll */
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  background-image: var(--bg-glow);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Typography elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.mono-tag {
+  font-family: var(--font-mono);
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Developer Section Titles e.g., </AboutMe> */
+.section-title {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title .tag-bracket {
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 8rem 0;
+  position: relative;
+}
+
+/* Base Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: transparent;
+  font-family: var(--font-family);
+}
+
+.btn-primary {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 10px rgba(15, 244, 164, 0.2);
+}
+
+.btn-primary:hover {
+  background: rgba(15, 244, 164, 0.1);
+  box-shadow: 0 0 20px rgba(15, 244, 164, 0.4);
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--card-border);
+}
+
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Glassmorphism utility for Dark Cards */
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
+}
