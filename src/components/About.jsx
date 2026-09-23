@@ -37,19 +37,28 @@ const About = () => {
                                 // A brief introduction about my journey
                             </p>
                             <p className="about-text">
-                                Hello! My name is <strong>Jaimeen Gondaliya</strong>. I am an IT student at <strong>UKA Tarsadia University</strong> with a strong passion for Android application development, software engineering, and web technologies.
+                                I'm <strong>Jaimeen Gondaliya</strong>, an M.Sc. Information Technology student at <strong>Charotar University of Science and Technology (CHARUSAT)</strong> and a passionate software developer.
                             </p>
                             <p className="about-text">
-                                I enjoy building real-world projects that help improve systems and solve practical problems. Through academic and personal projects, I have developed strong programming knowledge and hands-on development experience. I focus on continuously improving my skills in Android development, mobile technologies, and modern software development tools.
+                                My primary interests include software development, mobile application development, web development, database management, and building practical solutions for real-world problems.
+                            </p>
+                            <p className="about-text">
+                                Through my academic and personal projects, I have gained hands-on experience developing applications with features such as user authentication, role-based access control, online booking, payment integration, dashboards, database management, PDF generation, OTP verification, and responsive user interfaces.
+                            </p>
+                            <p className="about-text">
+                                I work with technologies including Java, C#, PHP, JavaScript, Dart, Flutter, HTML, CSS, MySQL, Firebase, and other development tools. I enjoy learning new technologies, improving my development skills, and turning ideas into functional software solutions.
+                            </p>
+                            <p className="about-text">
+                                My goal is to grow as a professional software developer and contribute to meaningful projects while continuously expanding my technical knowledge.
                             </p>
 
                             <div className="highlights-grid">
                                 <h3 className="mono-tag">&#123; Key Highlights &#125;</h3>
                                 <ul>
-                                    <li>Aspiring Android Developer</li>
-                                    <li>Passionate about Mobile & Web Technologies</li>
-                                    <li>Experience in Academic Software Projects</li>
-                                    <li>Strong Problem Solving Skills</li>
+                                    <li>M.Sc. IT Student at CHARUSAT</li>
+                                    <li>Passionate about Mobile & Web Development</li>
+                                    <li>Hands-on experience with full-stack web projects</li>
+                                    <li>Experience with payment integration & API development</li>
                                     <li>Continuous Technology Learner</li>
                                 </ul>
                             </div>

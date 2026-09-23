@@ -2,7 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-import { FaExternalLinkAlt, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaFileDownload, FaEnvelope } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -22,11 +22,9 @@ const Hero = () => {
                         <span className="title-prefix">&gt; </span>
                         <TypeAnimation
                             sequence={[
-                                'Android Developer',
-                                2000,
-                                'Mobile App Developer',
-                                2000,
                                 'Software Developer',
+                                2000,
+                                'Android Developer',
                                 2000,
                             ]}
                             wrapper="span"
@@ -38,12 +36,16 @@ const Hero = () => {
                     </h2>
 
                     <p className="intro-text">
-                        "I am an IT student and aspiring Android Developer with a strong interest in mobile application development. I enjoy building practical software projects and continuously learning new technologies to improve my development skills. My goal is to become a professional Android developer and build innovative, user-friendly mobile applications."
+                        I'm Jaimeen Gondaliya, an M.Sc. IT student and software developer passionate about creating modern, practical, and user-focused applications.
+                        I build web and mobile applications with a focus on clean interfaces, reliable functionality, database integration, and real-world problem solving.
                     </p>
 
                     <div className="hero-buttons">
                         <a href="#projects" className="btn btn-primary">
-                            <FaExternalLinkAlt /> View Projects
+                            <FaExternalLinkAlt /> View My Work
+                        </a>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                            <FaFileDownload /> Download Resume
                         </a>
                         <a href="#contact" className="btn btn-outline">
                             <FaEnvelope /> Contact Me
@@ -73,7 +75,7 @@ const Hero = () => {
                                     className="profile-img"
                                 />
                             </div>
-                            <div className="tech-badge badge-1 mono-tag">&#123; Android Developer &#125; </div>
+                            <div className="tech-badge badge-1 mono-tag">&#123; Mobile Developer &#125; </div>
                             <div className="tech-badge badge-4 mono-tag">&#123; Software Developer &#125; </div>
                         </div>
                     </Tilt>

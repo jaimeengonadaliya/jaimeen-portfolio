@@ -25,9 +25,9 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <h3 className="mono-tag" style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>Let's Collaborate</h3>
+                        <h3 className="mono-tag" style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>Let's Connect</h3>
                         <p className="contact-desc">
-                            I am currently open to new opportunities, projects, and collaborations. Feel free to reach out to discuss software engineering and application development.
+                            Have a project idea, internship opportunity, collaboration proposal, or simply want to connect? Feel free to reach out. I'm always interested in discussing software development, mobile applications, web technologies, and new opportunities to learn, collaborate, and build.
                         </p>
 
                         <div className="contact-details">
@@ -81,6 +81,10 @@ const Contact = () => {
                             <div className="form-group">
                                 <label className="mono-tag">Email</label>
                                 <input type="email" placeholder="Enter your email" required className="form-input" />
+                            </div>
+                            <div className="form-group">
+                                <label className="mono-tag">Subject</label>
+                                <input type="text" placeholder="Enter subject" required className="form-input" />
                             </div>
                             <div className="form-group">
                                 <label className="mono-tag">Message</label>

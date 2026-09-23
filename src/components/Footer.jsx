@@ -10,9 +10,12 @@ const Footer = () => {
             color: 'var(--text-secondary)'
         }}>
             <h4 className="mono-tag" style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'var(--primary-color)' }}>Jaimeen Gondaliya</h4>
-            <p style={{ marginBottom: '1rem', opacity: 0.8 }}>Android Developer | Software Developer</p>
+            <p style={{ marginBottom: '1rem', opacity: 0.8 }}>Mobile & Full-Stack Developer | Software Developer</p>
             <p className="mono-tag" style={{ fontSize: '0.9rem', opacity: 0.7 }}>
                 &copy; 2026 Jaimeen Gondaliya. All Rights Reserved.
+            </p>
+            <p style={{ fontSize: '0.85rem', opacity: 0.6, marginTop: '0.4rem' }}>
+                Designed &amp; Developed by Jaimeen Gondaliya.
             </p>
         </footer>
     );

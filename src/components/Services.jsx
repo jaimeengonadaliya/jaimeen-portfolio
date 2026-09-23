@@ -1,16 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-import { FaAndroid, FaLaptopCode, FaCogs, FaDatabase, FaBug, FaPaintBrush } from 'react-icons/fa';
+import { FaLaptopCode, FaMobileAlt, FaDatabase } from 'react-icons/fa';
 import './Services.css';
 
 const servicesData = [
-    { title: "Android App Development", description: "Develop modern Android mobile applications with user-friendly interfaces and strong performance.", icon: <FaAndroid /> },
-    { title: "Web Application Development", description: "Build responsive and functional web applications using modern technologies.", icon: <FaLaptopCode /> },
-    { title: "Software Development", description: "Develop practical software systems designed to solve real-world problems.", icon: <FaCogs /> },
-    { title: "Database Design & Management", description: "Design and manage databases using MySQL, Firebase, and MongoDB.", icon: <FaDatabase /> },
-    { title: "Bug Fixing & Code Optimization", description: "Improve software performance by fixing bugs and optimizing code structure.", icon: <FaBug /> },
-    { title: "Basic UI Design for Mobile & Web Applications", description: "Design clean and simple user interfaces for web and mobile applications.", icon: <FaPaintBrush /> }
+    {
+        title: "Web Development",
+        description: "Building responsive and functional web applications using PHP, JavaScript, HTML, CSS, and ASP.NET technologies.",
+        icon: <FaLaptopCode />
+    },
+    {
+        title: "Mobile Development",
+        description: "Developing user-friendly Android and Flutter applications with modern interfaces and integrated backend services.",
+        icon: <FaMobileAlt />
+    },
+    {
+        title: "Database Development",
+        description: "Designing and managing structured databases and integrating applications with MySQL, Firebase, SQL Server, Oracle, and other database technologies.",
+        icon: <FaDatabase />
+    },
 ];
 
 const Services = () => {

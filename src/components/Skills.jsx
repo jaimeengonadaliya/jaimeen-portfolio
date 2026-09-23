@@ -1,15 +1,39 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaMobileAlt, FaLaptopCode, FaDatabase, FaTools, FaLightbulb } from 'react-icons/fa';
+import { FaCode, FaMobileAlt, FaLaptopCode, FaDatabase, FaTools, FaGlobe } from 'react-icons/fa';
 import './Skills.css';
 
 const skillCategories = [
-    { title: "Languages", icon: <FaCode />, skills: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'C#', 'PHP'] },
-    { title: "Mobile", icon: <FaMobileAlt />, skills: ['Android App Development'] },
-    { title: "Frontend", icon: <FaLaptopCode />, skills: ['HTML', 'CSS', 'JavaScript', 'PHP'] },
-    { title: "Database", icon: <FaDatabase />, skills: ['MySQL', 'Firebase', 'MongoDB'] },
-    { title: "Tools", icon: <FaTools />, skills: ['Apache Server', 'NetBeans IDE', 'Android Studio', 'Visual Studio', 'VS Code'] },
-    { title: "Other", icon: <FaLightbulb />, skills: ['Problem Solving', 'Software Development', 'Debugging', 'Project Development'] }
+    {
+        title: "Programming Languages",
+        icon: <FaCode />,
+        skills: ['C', 'C++', 'Java', 'Python', 'C#', 'JavaScript', 'PHP', 'Dart']
+    },
+    {
+        title: "Web Development",
+        icon: <FaGlobe />,
+        skills: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'ASP.NET MVC', 'Bootstrap', 'Responsive Web Design']
+    },
+    {
+        title: "Mobile Development",
+        icon: <FaMobileAlt />,
+        skills: ['Flutter', 'Dart', 'Android Studio', 'Java', 'Firebase', 'XML']
+    },
+    {
+        title: "Database",
+        icon: <FaDatabase />,
+        skills: ['MySQL', 'MariaDB', 'SQL', 'Oracle', 'SQL Server', 'Firebase Firestore', 'MongoDB']
+    },
+    {
+        title: "Tools & Technologies",
+        icon: <FaTools />,
+        skills: ['Git', 'GitHub', 'Visual Studio', 'VS Code', 'Android Studio', 'NetBeans', 'XAMPP', 'Apache', 'REST APIs', 'Razorpay', 'PHPMailer', 'FPDF']
+    },
+    {
+        title: "Frontend",
+        icon: <FaLaptopCode />,
+        skills: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Responsive Design']
+    },
 ];
 
 const Skills = () => {

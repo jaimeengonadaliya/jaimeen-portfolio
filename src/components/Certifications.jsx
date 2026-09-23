@@ -1,14 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-import { FaCertificate, FaAward } from 'react-icons/fa';
+import { FaAward, FaExternalLinkAlt } from 'react-icons/fa';
 import './Certifications.css';
 
 const certificationsList = [
-    "Web Development Fundamentals",
-    "Programming Fundamentals",
-    "Database Management Basics",
-    "Software Development Training"
+    {
+        title: "Deloitte Australia Data Analytics Job Simulation",
+        issuer: "Forage",
+        link: "#"
+    },
+    {
+        title: "Oracle Cloud Database Services Certified Professional",
+        issuer: "Oracle",
+        link: "#"
+    },
+    {
+        title: "Oracle DBA 11g/12c Database Administration",
+        issuer: "Oracle",
+        link: "#"
+    },
 ];
 
 const Certifications = () => {
@@ -46,7 +57,8 @@ const Certifications = () => {
                                     <div className="cert-icon-bg">
                                         <FaAward className="cert-icon" />
                                     </div>
-                                    <h3 className="cert-title">{cert}</h3>
+                                    <h3 className="cert-title">{cert.title}</h3>
+                                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', marginTop: '0.4rem' }}>{cert.issuer}</p>
                                     <div className="cert-badge">Verified</div>
                                 </div>
                             </motion.div>

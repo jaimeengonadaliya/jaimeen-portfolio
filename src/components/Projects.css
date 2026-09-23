@@ -1,8 +1,9 @@
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
     padding: 2rem 0;
+    align-items: start;
 }
 
 .project-tilt-wrapper {
@@ -42,9 +43,24 @@
     gap: 1rem;
 }
 
+.project-number {
+    font-size: 2.5rem;
+    color: rgba(15, 244, 164, 0.15);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
 .project-title {
     font-size: 1.5rem;
     color: var(--text-primary);
+}
+
+.project-subtitle {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 0.3rem;
+    opacity: 0.85;
 }
 
 .project-links {
@@ -102,8 +118,33 @@
     background: rgba(15, 244, 164, 0.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
     .project-card {
         padding: 2rem;
     }
+}
+
+.project-meta {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.project-action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.project-btn {
+    font-size: 0.88rem;
+    padding: 0.5rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }

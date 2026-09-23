@@ -3,8 +3,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 100px;
-    /* Offset for missing header */
+    padding-top: 120px;
 }
 
 .hero-container {
@@ -72,7 +71,8 @@
 
 .hero-buttons {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 /* 3D Profile Card Stylings */

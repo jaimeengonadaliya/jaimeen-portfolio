@@ -1,29 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLaptopCode, FaCogs, FaDatabase, FaProjectDiagram } from 'react-icons/fa';
+import { FaLaptopCode, FaCode, FaDatabase } from 'react-icons/fa';
 import './Experience.css';
 
 const experiences = [
     {
-        title: 'Software Development',
+        title: 'Student Software Developer',
         icon: <FaLaptopCode />,
-        description: 'Developing scalable and robust software applications using C# and .NET ecosystem to solve real-world problems.'
+        description: 'As an IT student and project developer, I have gained practical experience through academic and personal software projects across web, mobile, and database development.',
     },
     {
-        title: 'Web Application Development',
-        icon: <FaCogs />,
-        description: 'Building dynamic, responsive full-stack applications with ASP.NET Core MVC and modern front-end technologies.'
+        title: 'Full-Stack Web Projects',
+        icon: <FaCode />,
+        description: 'My project work includes developing complete applications with authentication, role-based access, database integration, online booking, payment gateways, dashboards, API integrations, PDF generation, and responsive user interfaces.',
     },
     {
-        title: 'Database Design',
+        title: 'Continuous Learning',
         icon: <FaDatabase />,
-        description: 'Designing efficient relation database architectures using SQL Server with optimized queries for performance.'
+        description: 'I continuously practice software development by building projects and exploring new technologies and development tools across web, mobile, and database domains.',
     },
-    {
-        title: 'Agile Project Management',
-        icon: <FaProjectDiagram />,
-        description: 'Working in Scrum setups utilizing Jira for sprint planning, roadmap development, and dependency tracking.'
-    }
 ];
 
 const Experience = () => {
@@ -37,7 +32,7 @@ const Experience = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    My <span>Expertise</span>
+                    My <span>Experience</span>
                 </motion.h2>
 
                 <div className="timeline-container">
